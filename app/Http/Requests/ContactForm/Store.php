@@ -29,6 +29,8 @@ class Store extends FormRequest
             'name' => ['required', new MinimumWords(2)],
             'email' => ['required', 'email', new ValidEmail()],
             'message' => ['required', 'min:20'],
+            'telepon' => ['nullable','numeric'],
+            'kategori' => [],
         ];
     }
 }
